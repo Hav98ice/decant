@@ -1,8 +1,9 @@
-import Image from 'next/image'
+import Image, { type StaticImageData } from 'next/image'
 import { Reveal } from './Reveal'
+import { img } from '@/lib/images'
 
 type Dish = {
-  img: string
+  img: StaticImageData
   course: string
   name: string
   description: string
@@ -11,42 +12,42 @@ type Dish = {
 
 const dishes: Dish[] = [
   {
-    img: '/images/dish-1.jpg',
+    img: img.dish1,
     course: 'To Begin',
     name: 'Oysters & Mignonette',
     description: 'Pacific oysters, champagne pearl, charred lemon.',
     price: '24',
   },
   {
-    img: '/images/dish-3.jpg',
+    img: img.dish3,
     course: 'From the Garden',
     name: 'Heirloom & Burrata',
     description: 'Late-summer tomato, basil oil, aged balsamic.',
     price: '19',
   },
   {
-    img: '/images/dish-5.jpg',
+    img: img.dish5,
     course: 'From the Sea',
     name: 'Seared Scallops',
     description: 'Brown butter, cauliflower, capers, golden raisin.',
     price: '38',
   },
   {
-    img: '/images/dish-2.jpg',
+    img: img.dish2,
     course: 'The Main',
     name: 'Dry-Aged Ribeye',
     description: 'Forty-day, bone marrow, confit shallot, red wine.',
     price: '64',
   },
   {
-    img: '/images/dish-7.jpg',
+    img: img.dish7,
     course: 'The Main',
     name: 'Wild Mushroom Risotto',
     description: 'Carnaroli, black truffle, parmesan, thyme.',
     price: '34',
   },
   {
-    img: '/images/dish-9.jpg',
+    img: img.dish9,
     course: 'To Finish',
     name: 'Dark Chocolate Crémeux',
     description: 'Olive oil, sea salt, candied hazelnut, port.',

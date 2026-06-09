@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import { Reveal } from './Reveal'
+import { img } from '@/lib/images'
 
 const people = [
   { name: 'Jessica Cahill', role: 'Founder · Certified Sommelier' },
@@ -17,7 +18,7 @@ export function Story() {
         <Reveal delay={80} className="story-image">
           <div className="img-frame" style={{ aspectRatio: '4 / 5', borderRadius: 2 }}>
             <Image
-              src="/images/interior-3.jpg"
+              src={img.interior3}
               alt="The bar and cellar at Decant"
               fill
               sizes="(max-width: 900px) 100vw, 45vw"

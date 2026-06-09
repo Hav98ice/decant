@@ -1,13 +1,14 @@
 import Image from 'next/image'
 import { Reveal } from './Reveal'
 import { site } from '@/lib/site'
+import { img } from '@/lib/images'
 
 export function Visit() {
   return (
     <section id="visit" style={{ position: 'relative', overflow: 'hidden' }}>
       {/* Faint background photography */}
       <Image
-        src="/images/dish-8.jpg"
+        src={img.dish8}
         alt=""
         aria-hidden
         fill

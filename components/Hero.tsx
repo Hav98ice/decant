@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import { site } from '@/lib/site'
+import { img } from '@/lib/images'
 
 export function Hero() {
   return (
@@ -17,7 +18,7 @@ export function Hero() {
     >
       {/* Background photography */}
       <Image
-        src="/images/interior-1.jpg"
+        src={img.interior1}
         alt="The candlelit dining room at Decant"
         fill
         priority

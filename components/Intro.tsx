@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import { Reveal } from './Reveal'
+import { img } from '@/lib/images'
 
 export function Intro() {
   return (
@@ -40,7 +41,7 @@ export function Intro() {
         <Reveal delay={120}>
           <div className="img-frame" style={{ aspectRatio: '4 / 5', borderRadius: 2 }}>
             <Image
-              src="/images/interior-2.jpg"
+              src={img.interior2}
               alt="Wine glasses on a candlelit table at Decant"
               fill
               sizes="(max-width: 900px) 100vw, 45vw"
